@@ -1,0 +1,12 @@
+# Font files
+font/*.ttf
+
+# Image folder
+image/
+
+# CSV files
+*.csv
+
+# Python cache files
+__pycache__/
+*.pyc

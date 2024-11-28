@@ -1,0 +1,39 @@
+<RootLayout>:
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 0
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    Label:
+        text: '포켓약국'
+        font_name:'Kangwon Bold.ttf'
+        color: 'black'
+        font_size: 64
+        size_hint: 0.3, 0.1
+        pos_hint: {'center_x': 0.5, 'center_y': 0.9}
+
+    Image:
+        source:'mainpill.png'
+        size_hint: 0.7,0.7
+        pos_hint: {'center_x': 0.5, 'center_y': 0.65}
+
+
+    MDRectangleFlatButton:
+        text: "어디가 아픈가요\n(증상별 약 추천)"
+        font_name:'Kangwon Light.ttf' #글씨체
+        font_size: 34
+        size_hint: 0.3, 0.1
+        pos_hint: {'center_x': 0.5, 'center_y': 0.35}
+        on_press: root.button01_clicked()
+
+    MDRectangleFlatButton:
+        text: "복용 중이신 약이\n궁금한가요"
+        font_name:'Kangwon Light.ttf'
+        font_size: 34
+        size_hint: 0.3, 0.1
+        pos_hint: {'center_x': 0.5, 'center_y': 0.15}
+        on_press: root.button02_clicked()
+
+    
